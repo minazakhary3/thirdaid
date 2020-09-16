@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.minazakaria.thirdaid.HomescreenActivity"
+    android:background="#ececec">
+
+    <ImageView
+        android:id="@+id/report_emerg_button"
+        android:layout_width="345dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:adjustViewBounds="true"
+        android:cropToPadding="true"
+        app:srcCompat="@drawable/report_emergency_button_styles" />
+
+    <ImageView
+        android:id="@+id/header"
+        android:layout_width="1000dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:adjustViewBounds="true"
+        android:cropToPadding="true"
+        app:srcCompat="@drawable/header" />
+
+    <ImageView
+        android:id="@+id/header_logo"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/header"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="12dp"
+        android:adjustViewBounds="true"
+        android:cropToPadding="true"
+        app:srcCompat="@drawable/logo1" />
+
+    <ImageView
+        android:id="@+id/nearby_button"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/report_emerg_button"
+        android:layout_below="@+id/report_emerg_button"
+        android:layout_marginTop="6dp"
+        android:adjustViewBounds="true"
+        android:cropToPadding="true"
+        app:srcCompat="@drawable/nearby_button_syles" />
+
+    <ImageView
+        android:id="@+id/directory_button"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/report_emerg_button"
+        android:layout_alignTop="@+id/nearby_button"
+        android:adjustViewBounds="true"
+        android:cropToPadding="true"
+        app:srcCompat="@drawable/directory_button_styles" />
+
+    <ImageView
+        android:id="@+id/safe_drive_button"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/nearby_button"
+        android:layout_below="@+id/nearby_button"
+        android:layout_marginTop="6dp"
+        android:adjustViewBounds="true"
+        android:cropToPadding="true"
+        app:srcCompat="@drawable/safe_drive_styles" />
+
+    <ImageView
+        android:id="@+id/account_button"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/directory_button"
+        android:layout_alignTop="@+id/safe_drive_button"
+        android:adjustViewBounds="true"
+        android:cropToPadding="true"
+        app:srcCompat="@drawable/account_button_styles" />
+
+    <TextView
+        android:id="@+id/token_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/safe_drive_button"
+        android:layout_marginTop="25dp"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

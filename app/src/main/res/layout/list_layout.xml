@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="345dp"
+    android:layout_height="wrap_content"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:layout_gravity="center_horizontal">
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="345dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        card_view:cardCornerRadius="10dp"
+        android:layout_gravity="center">
+
+        <RelativeLayout
+            android:layout_width="345dp"
+            android:layout_height="wrap_content"
+            android:background="#c53c2c"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/textViewTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dr. Ludwig Van Beethoven"
+                android:textColor="#ffffff"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/textViewName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewTitle"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="5dp"
+                android:text="An expert in piano playing, and deaf composing. Wrote many symphonies."
+                android:textColor="#ffffff"
+                android:textSize="13dp" />
+
+            <TextView
+                android:id="@+id/textViewNum1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewName"
+                android:layout_marginTop="15dp"
+                android:text="+000 0000 0000"
+                android:textColor="#ffffff"
+                android:textSize="13dp"
+                android:layout_marginLeft="5dp"/>
+
+            <ImageView
+                android:id="@+id/callNowButton"
+                android:layout_width="105dp"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/textViewNum1"
+                android:layout_below="@+id/textViewNum1"
+                android:layout_marginTop="15dp"
+                android:adjustViewBounds="true"
+                android:cropToPadding="true"
+                android:paddingBottom="10dp"
+                android:src="@drawable/call_now_button_syles" />
+
+            <ImageView
+                android:id="@+id/get_directions_button"
+                android:layout_width="141dp"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/callNowButton"
+                android:layout_marginStart="13dp"
+                android:layout_toEndOf="@+id/callNowButton"
+                android:adjustViewBounds="true"
+                android:cropToPadding="true"
+                android:src="@drawable/get_directions_styles" />
+
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

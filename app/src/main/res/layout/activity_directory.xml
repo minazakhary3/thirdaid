@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.minazakaria.thirdaid.DirectoryActivity"
+    android:layout_gravity="center">
+
+    <ImageView
+        android:id="@+id/header"
+        android:layout_width="1000dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:adjustViewBounds="true"
+        android:cropToPadding="true"
+        app:srcCompat="@drawable/directory_header" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rec_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/serviceText"
+        android:layout_centerHorizontal="true" />
+
+    <Spinner
+        android:id="@+id/areaSpinner"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/areaText"
+        android:layout_marginEnd="25dp" />
+
+    <Spinner
+        android:id="@+id/areaSpinner2"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:layout_alignStart="@+id/areaSpinner"
+        android:layout_below="@+id/areaSpinner" />
+
+    <TextView
+        android:id="@+id/areaText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/header"
+        android:layout_marginStart="15dp"
+        android:text="Area:"
+        android:layout_marginTop="15dp"
+        android:textColor="#000000"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/serviceText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/areaText"
+        android:layout_below="@+id/areaSpinner"
+        android:text="Service:"
+        android:textColor="#000000"
+        android:textSize="18dp"
+        android:paddingBottom="10dp"/>
+
+</RelativeLayout>

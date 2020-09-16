@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.minazakaria.thirdaid.NearbyEmergenciesActivity">
+
+    <ImageView
+        android:id="@+id/header"
+        android:layout_width="1000dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:adjustViewBounds="true"
+        android:cropToPadding="true"
+        app:srcCompat="@drawable/nearby_header" />
+
+    <ImageView
+        android:id="@+id/view_map_button"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/header"
+        android:layout_marginEnd="11dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:adjustViewBounds="true"
+        android:cropToPadding="true"
+        app:srcCompat="@drawable/view_map_button_styles" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/emergencyRecycler"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/view_map_button" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/view_map_button"
+        android:layout_marginBottom="7dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="12dp"
+        android:text="Emergencies:"
+        android:textColor="#000000"
+        android:textSize="17dp" />
+
+    <Spinner
+        android:id="@+id/locationSpinner"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView2"
+        android:layout_toEndOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/emergencyRecycler"
+        android:layout_marginTop="150dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="#000000"
+        android:textSize="18dp"
+        android:text="There are no emergencies available." />
+
+</RelativeLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.minazakaria.thirdaid.SelectionActivity"
+    android:background="#c53c2c">
+
+    <ImageView
+        android:id="@+id/logo_selection"
+        android:layout_width="285dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/login_button_selection"
+        android:layout_marginTop="116dp"
+        android:adjustViewBounds="true"
+        app:srcCompat="@drawable/logo1" />
+
+    <ImageView
+        android:id="@+id/login_button_selection"
+        android:layout_width="285dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/signup_button_selection"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        android:adjustViewBounds="true"
+        android:cropToPadding="true"
+        app:srcCompat="@drawable/login_button_styles" />
+
+    <ImageView
+        android:id="@+id/signup_button_selection"
+        android:layout_width="285dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/devtext"
+        android:layout_alignStart="@+id/login_button_selection"
+        android:layout_marginBottom="77dp"
+        android:adjustViewBounds="true"
+        android:cropToPadding="true"
+        app:srcCompat="@drawable/signup_button_styles" />
+
+    <TextView
+        android:id="@+id/devtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="27dp"
+        android:text="Development Build 3.7.62b"
+        android:textSize="14dp" />
+</RelativeLayout>

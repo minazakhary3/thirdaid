@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.minazakaria.thirdaid.emergencyViewActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="1000dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:adjustViewBounds="true"
+        android:cropToPadding="true"
+        app:srcCompat="@drawable/nearby_header" />
+    <RelativeLayout
+        android:layout_width="345dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView"
+        android:layout_marginTop="10dp"
+        android:background="#c53c2c"
+        android:paddingBottom="25dp"
+        android:id="@+id/rl2">
+
+        <TextView
+            android:id="@+id/emergTypeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="25dp"
+            android:text="Emergency Type: Accident"
+            android:textColor="#ffffff"
+            android:textSize="18dp"/>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/emergTypeText"
+            android:layout_below="@+id/emergTypeText"
+            android:layout_marginTop="15dp"
+            android:text="Time Reported: 7:57AM"
+            android:textColor="#ffffff"
+            android:textSize="18dp"/>
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView3"
+            android:layout_below="@+id/textView3"
+            android:layout_marginTop="15dp"
+            android:text="Other Details: No other details were given."
+            android:textColor="#ffffff"
+            android:textSize="18dp"/>
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView4"
+            android:layout_below="@+id/textView4"
+            android:layout_marginTop="15dp"
+            android:text="Reported By: Meedeum Cho"
+            android:textColor="#ffffff"
+            android:textSize="18dp"/>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/callReporterButton"
+        android:layout_width="345dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="295dp"
+        android:adjustViewBounds="true"
+        android:cropToPadding="true"
+        app:srcCompat="@drawable/call_reporter_button_styles" />
+
+
+</RelativeLayout>

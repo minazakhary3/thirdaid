@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.minazakaria.thirdaid.ReportEmergencyActivity"
+    android:background="#ececec">
+
+    <ImageView
+        android:id="@+id/header"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:adjustViewBounds="true"
+        android:cropToPadding="true"
+        app:srcCompat="@drawable/report_header" />
+
+
+    <ImageView
+        android:id="@+id/report_nopic_button"
+        android:layout_width="335dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/report_withpic"
+        android:layout_below="@+id/otherText"
+        android:layout_marginTop="55dp"
+        android:adjustViewBounds="true"
+        android:layout_marginBottom="5dp"
+        android:cropToPadding="true"
+        app:srcCompat="@drawable/report_withoutimage_button_styles" />
+
+    <ImageView
+        android:id="@+id/report_withpic"
+        android:layout_width="335dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/report_nopic_button"
+        android:layout_centerHorizontal="true"
+        android:adjustViewBounds="true"
+        android:cropToPadding="true"
+        app:srcCompat="@drawable/report_withimage_button_styles" />
+
+    <Spinner
+        android:id="@+id/emergencies_spinner"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/otherText"
+        android:layout_alignTop="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/otherText"
+        android:layout_below="@+id/header"
+        android:layout_marginTop="13dp"
+        android:text="Type of Emergency:"
+        android:textColor="#000000"
+        android:textSize="17dp" />
+
+    <EditText
+        android:id="@+id/otherText"
+        android:layout_width="335dp"
+        android:layout_height="160dp"
+        android:layout_below="@+id/emergencies_spinner"
+        android:layout_centerHorizontal="true"
+        android:background="#e5e5e5"
+        android:ems="10"
+        android:gravity="top"
+        android:layout_marginTop="5dp"
+        android:hint="Other details (Optional)"
+        android:inputType="textMultiLine"
+        android:maxLines="10"
+        android:minLines="10"
+        android:padding="10dp"
+        android:textSize="15dp" />
+
+
+</RelativeLayout>

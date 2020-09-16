@@ -1,0 +1,84 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="ThirdAid.App.Theme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:statusBarColor" tools:ignore="NewApi">#c53c2c</item>
+        <item name="android:navigationBarColor" tools:ignore="NewApi">#c53c2c</item>
+        <item name="colorAccent">#c53c2c</item>
+    </style>
+
+    <style name="MapStyle" parent="ThirdAid.App.Theme">
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:statusBarColor" tools:ignore="NewApi">@android:color/transparent</item>
+    </style>
+
+    <style name="ThirdAid.App.Theme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="ThirdAid.App.Theme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <string-array name="areas">
+        <item>New Cairo</item>
+        <item>Maadi</item>
+    </string-array>
+
+    <string-array name="services">
+        <item>All</item>
+        <item>Physicians</item>
+        <item>Hospitals</item>
+        <item>Pharmacies</item>
+    </string-array>
+
+    <string-array name="categories">
+    <item>All</item>
+    <item>General</item>
+    <item>Dermatology</item>
+    </string-array>
+
+    <string-array name="emergencies">
+        <item>Accident</item>
+        <item>Fire</item>
+        <item>Terrorist Attack</item>
+        <item>Shooting</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="emergencyLocations">
+        <item>Nearby</item>
+        <item>All</item>
+    </string-array>
+
+</resources>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
